@@ -11,7 +11,7 @@ I am a dedicated and versatile software developer with a passion for creating ef
 
 export const EXPERIENCES = [
   {
-    year: "April 2024 - Present",
+    year: "April 2024 - June 2024",
     role: "Flutter Developer Intern",
     company: "Techno Particles",
     description: `I and my team are assisting in the development of a Flutter-based mobile application under the guidance of senior developers, resulting in a 30% increase in user engagement and collaborated with stakeholders to define project requirements and timelines.`,
