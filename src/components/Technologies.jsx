@@ -1,18 +1,10 @@
-// import { RiReactjsLine } from "react-icons/ri"
-// import { TbBrandNextjs } from "react-icons/tb"
-// import { SiMongodb } from "react-icons/si"
 // import { DiRedis } from "react-icons/di"
-import { FaNodeJs } from "react-icons/fa"
 import { FaJava } from "react-icons/fa";
-import { SiSpringboot } from "react-icons/si";
-import { SiFlutter, SiSpring, SiPython, SiMysql } from "react-icons/si";
-// import { BiLogoPostgresql } from "react-icons/bi"
+import { SiSpringboot, SiJenkins, SiKubernetes, SiAmazonaws } from "react-icons/si";
+import { SiSpring, SiPython, SiMysql } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
-// import { BiLogoTypescript } from "react-icons/bi";
 import { RiJavascriptFill } from "react-icons/ri";
-// import { SiPrisma } from "react-icons/si";
-// import { SiTailwindcss } from "react-icons/si";
-
+// import { SiLinux } from 'react-icons/si';
 import { motion } from "framer-motion"
 
 const iconVariants = (duration) => ({
@@ -43,6 +35,7 @@ function Technologies() {
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4">
+
         <motion.div
           variants={iconVariants(8)}
           initial="initial"
@@ -51,6 +44,7 @@ function Technologies() {
         >
           <FaJava className="text-6xl text-orange-600" />
         </motion.div>
+
         <motion.div
           variants={iconVariants(4.5)}
           initial="initial"
@@ -61,14 +55,6 @@ function Technologies() {
         </motion.div>
 
         <motion.div
-          variants={iconVariants(8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiFlutter className="text-6xl text-blue-500" />
-        </motion.div>
-        <motion.div
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
@@ -76,58 +62,11 @@ function Technologies() {
         >
           <SiSpring className="text-6xl text-green-600" />
         </motion.div>
-        {/* <motion.div
-          variants={iconVariants(8.75)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <RiReactjsLine className="text-6xl text-cyan-400" />
-        </motion.div> */}
-        {/* <motion.div
-          variants={iconVariants(5.85)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <BiLogoTypescript className="text-6xl text-blue-500" />
-        </motion.div> */}
-        {/* <motion.div
-          variants={iconVariants(9.7)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <TbBrandNextjs className="text-6xl " />
-        </motion.div> */}
-        {/* <motion.div
-          variants={iconVariants(7.3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiTailwindcss className="text-6xl text-cyan-600" />
-        </motion.div> */}
-        <motion.div
-          variants={iconVariants(6.7)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaNodeJs className="text-6xl text-green-500" />
-        </motion.div>
+
         {/* <div className="rounded-2xl border-4 border-neutral-800 p-4">
             <DiRedis className="text-6xl text-red-700"/>
         </div> */}
-        {/* <motion.div
-          variants={iconVariants(8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <BiLogoPostgresql className="text-6xl text-sky-700" />
-        </motion.div> */}
-        {/* <motion.div
-          variants={iconVariants(4.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiPrisma className="text-6xl text-cyan-900" />
-        </motion.div> */}
+
         <motion.div
           variants={iconVariants(4.5)}
           initial="initial"
@@ -136,6 +75,7 @@ function Technologies() {
         >
           <SiPython className="text-6xl text-yellow-500" />
         </motion.div>
+
         <motion.div
           variants={iconVariants(1.5)}
           initial="initial"
@@ -146,26 +86,57 @@ function Technologies() {
         </motion.div>
 
         <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaDocker className="text-6xl text-blue-900" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiAmazonaws className="text-6xl text-orange-400" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiJenkins className="text-6xl text-red-700" />
+        </motion.div>
+
+        {/* <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiLinux className="text-6xl text-black" />
+        </motion.div> */}
+
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiKubernetes className="text-6xl text-blue-500" />
+        </motion.div>
+
+        <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
           <RiJavascriptFill className="text-6xl text-yellow-300" />
         </motion.div>
-        {/* <motion.div
-          variants={iconVariants(1.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiMongodb className="text-6xl text-green-500" />
-        </motion.div> */}
-        {/* <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaDocker className="text-6xl text-blue-900" />
-        </motion.div> */}
+
       </motion.div>
     </div>
   )

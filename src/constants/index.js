@@ -49,7 +49,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Secure Bank Application (working)",
+    title: "Secure Bank Application",
     image: project1,
     // link: "https://sece-leaderboard-nitjsr.netlify.app/",
     link: "https://github.com/Sethumadhav24/Banking_application",
