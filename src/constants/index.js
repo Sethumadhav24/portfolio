@@ -49,6 +49,15 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "End to End CICD Implementation",
+    image: project4,
+    // link: "https://tic-tac-toe-pratik.vercel.app/",
+    link: "https://github.com/Sethumadhav24/tic-tac-toe",
+    description:
+      "Designed and established an end-to-end CI/CD pipeline for a Java-based application using Jenkins declarative pipelines. Managed pipeline stages: Build, Test, Static code analysis, Docker image creation, and Kubernetes deployment via Argo CD",
+    technologies: ["Jenkins", "Docker", "Kubernetes", "Argo CD", "EC2 Instance"],
+  },
+  {
     title: "Secure Bank Application",
     image: project1,
     // link: "https://sece-leaderboard-nitjsr.netlify.app/",
@@ -83,15 +92,6 @@ export const PROJECTS = [
     description:
       "A platform for automated attendance tracking. Users can effortlessly mark their attendance using biometric authentication, eliminating the need for manual processes.It reduces management time by 40%, enhances security by 75%, and accurately records attendance for 120 individuals with 99.9% data precision, eliminating manual processes.",
     technologies: ["Python", "Arduino", "Firebase"],
-  },
-  {
-    title: "Tic Tac Toe",
-    image: project4,
-    // link: "https://tic-tac-toe-pratik.vercel.app/",
-    link: "https://github.com/Sethumadhav24/tic-tac-toe",
-    description:
-      "Tic Tac Toe is a fun and interactive game built using React. The game features a responsive board where players can take turns to place their 'X' or 'O' marks.",
-    technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
