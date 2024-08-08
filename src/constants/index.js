@@ -52,7 +52,7 @@ export const PROJECTS = [
     title: "End to End CICD Implementation",
     image: project4,
     // link: "https://tic-tac-toe-pratik.vercel.app/",
-    link: "https://github.com/Sethumadhav24/tic-tac-toe",
+    // link: "https://github.com/Sethumadhav24/tic-tac-toe",
     description:
       "Designed and established an end-to-end CI/CD pipeline for a Java-based application using Jenkins declarative pipelines. Managed pipeline stages: Build, Test, Static code analysis, Docker image creation, and Kubernetes deployment via Argo CD",
     technologies: ["Jenkins", "Docker", "Kubernetes", "Argo CD", "EC2 Instance"],
