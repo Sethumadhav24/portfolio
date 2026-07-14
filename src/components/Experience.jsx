@@ -29,10 +29,20 @@ const Experience = () => {
                   {experience.role} - {' '}
                   <span className="text-sm text-purple-100">{experience.company}</span>
                 </h6>
-                <p className="mb-4 text-neutral-400">{experience.description}</p>
-                {experience.technologies.map((tech, index) => {
-                  return <span className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800" key={index}>{tech}</span>
-                })}
+                {Array.isArray(experience.description) ? (
+                  <ul className="list-disc pl-4 mb-4 text-neutral-400 space-y-2">
+                    {experience.description.map((desc, idx) => (
+                      <li key={idx}>{desc}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="mb-4 text-neutral-400">{experience.description}</p>
+                )}
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {experience.technologies.map((tech, index) => {
+                    return <span className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800" key={index}>{tech}</span>
+                  })}
+                </div>
               </motion.div>
             </div>
           )

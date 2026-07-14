@@ -12,33 +12,31 @@ function Projects() {
       <div>
         {PROJECTS.map((project, index) => {
           return (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <div key={index} className="mb-12 flex flex-wrap lg:justify-center">
               <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 50 }}
                 transition={{ duration: 1 }}
-                className="w-full lg:w-1/4">
-                <img width={150} height={150} className="mb-6 rounded" src={project.image} alt={project.title} />
-              </motion.div>
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 100 }}
-                transition={{ duration: 1 }}
-                className="w-full max-w-xl lg:w-3/4">
-                <div className="flex items-center justify-between">
-                  <h5 className="mb-2 items-center font-semibold">{project.title}</h5>
-                  <div className="flex justify-center items-center gap-3 ">
-                    {/* <a className="text-blue-500 hover:text-blue-700" href={project.link} >Code</a>
-                    <h5 className="text-gray-500">|</h5> */}
-                    <a className="mb-2 text-blue-500 hover:text-blue-700 " href={project.link} target="_blank" rel="noopener noreferrer">Link</a>
-                  </div>
+                className="w-full max-w-3xl">
+                <h5 className="mb-4 text-xl font-semibold text-neutral-100">{project.title}</h5>
+                {Array.isArray(project.description) ? (
+                  <ul className="list-disc pl-5 mb-4 text-neutral-400 space-y-2">
+                    {project.description.map((desc, idx) => (
+                      <li key={idx}>{desc}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="mb-4 text-neutral-400">{project.description}</p>
+                )}
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {project.technologies.map((tech, index) => {
+                    return (
+                      <span key={index} className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">
+                        {tech}
+                      </span>
+                    )
+                  })}
                 </div>
-                <p className="mb-4 text-neutral-400">{project.description}</p>
-                {project.technologies.map((tech, index) => {
-                  return (<span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">
-                    {tech}
-                  </span>)
-                })}
               </motion.div>
             </div>
           )

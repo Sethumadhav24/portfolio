@@ -3,100 +3,87 @@ import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 
-export const HERO_CONTENT = `I am a passionate Java Backend developer with a knack for crafting robust and scalable web applications. With 1 years of hands-on experience, I have honed my skills in back-end technologies like Java, Spring Boot, Spring Security, Nodejs, Azure, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate AI/ML Engineer with 2 years of experience building practical AI solutions across Generative AI, LLMs, RAG, Computer Vision, and Edge AI. I specialize in developing, fine-tuning, and deploying AI models on both cloud and edge platforms, with a strong focus on performance and efficiency. I have a proven track record of taking projects from research and prototyping to production, delivering scalable and reliable AI systems with low latency and high usability.`;
 
-export const ABOUT_TEXT = `
-I am a dedicated and versatile software developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including Java, Python, C/C++, Spring Boot, MySQL, and machine learning frameworks. My journey in software development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy contributing to open-source projects and exploring new advancements in technology.`;
-// export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated AI/ML Engineer focused on building high-performance AI systems spanning Generative AI, LLMs, and Computer Vision. I excel at optimizing complex architectures for resource-constrained edge hardware, deploying on-device LLMs (Microsoft Phi, TinyLlama), and building production-grade offline RAG systems. My background includes end-to-end MLOps pipelines (using AWS SageMaker and Bedrock) and C++/Python computer vision stacks. I graduated with a Bachelor of Technology in Electronics and Communication Engineering from Gokaraju Rangaraju Institute of Engineering & Technology (GRIET) in 2024.`;
 
 export const EXPERIENCES = [
   {
-    year: "April 2024 - June 2024",
-    role: "Flutter Developer Intern",
-    company: "Techno Particles",
-    description: `I and my team are assisting in the development of a Flutter-based mobile application under the guidance of senior developers, resulting in a 30% increase in user engagement and collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Flutter", "Java", "Dart", "State Managment"],
+    year: "September 2024 - Present",
+    role: "AI / ML Engineer",
+    company: "Vintillix Global Innovation Private Limited",
+    description: [
+      "Deployed optimized CNN models for face recognition, object detection, tracking, and segmentation (YOLOv8/SSD) across edge devices, maintaining 80%+ mAP accuracy under strict CPU/RAM constraints with no GPU dependency.",
+      "Engineered real-time computer vision pipelines in C++ and Python on Raspberry Pi, reducing inference latency by 80%+ through hardware model compression using ONNX, NCNN, TensorRT, and Apache TVM frameworks.",
+      "Built an autonomous indoor navigation stack using Raspberry Pi and monocular USB camera, implementing visual odometry, obstacle avoidance, and path planning achieving 70%+ reliability in dynamic indoor environments.",
+      "Engineered and optimized a low-latency LLM inference server using Llama.cpp, FastAPI, RAG, and MongoDB-based memory, reducing response latency by 75%.",
+      "Architected the end-to-end EduBot platform, enabling communication between backend services, mobile applications, and embedded microcontrollers for real-time AI interactions.",
+      "Quantized and deployed the Microsoft Phi language model on a 4-core Raspberry Pi, reducing inference latency from 60s to 4–6s (90% performance boost) via quantization, pruning, and knowledge distillation.",
+      "Designed offline RAG pipelines using FAISS vector indexing, LangGraph orchestration, and conversation-aware caching, cutting query response to under 2s with zero internet dependency.",
+      "Managed GPU-based model training and serving across SageMaker, Bedrock, EC2, and S3 via Docker and CI/CD pipelines, supporting reproducible deployments with 90%+ pipeline success rate."
+    ],
+    technologies: ["Python", "C++", "PyTorch", "Llama.cpp", "FastAPI", "RAG", "LangGraph", "ONNX", "NCNN", "OpenVINO", "Raspberry Pi", "ROS2", "AWS SageMaker", "Docker"],
   },
   {
-    year: "2022 - 2023",
-    role: "Machine Learning Intern",
-    company: "Suvidha Foundation",
-    description: `Developed a report and model for Text summarization presented multifaceted challenges and Conducted extensive research, collaborated with team, and engaged in practical experimentation`,
-    technologies: ["Python", "NLP", "NLTK"],
+    year: "July - September 2024",
+    role: "Software Developer",
+    company: "QuantumEco",
+    description: [
+      "Developed scalable Java/Spring Boot microservices with multithreading, OAuth2/JWT security, Docker/Kubernetes deployment, and CI/CD pipelines on AWS event-driven architecture."
+    ],
+    technologies: ["Java", "Spring Boot", "OAuth2/JWT", "Docker", "Kubernetes", "AWS", "CI/CD"],
   },
-  // {
-  //   year: "2022 - 2023",
-  //   role: "Frontend Developer",
-  //   company: "Adobe",
-  //   description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-  //   technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  // },
-  // {
-  //   year: "2021 - 2022",
-  //   role: "Full Stack Developer",
-  //   company: "Facebook",
-  //   description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-  //   technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  // },
-  // {
-  //   year: "2020 - 2021",
-  //   role: "Software Engineer",
-  //   company: "Paypal",
-  //   description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-  //   technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  // },
 ];
 
 export const PROJECTS = [
   {
-    title: "End to End CICD Implementation",
-    image: project4,
-    // link: "https://tic-tac-toe-pratik.vercel.app/",
-    // link: "https://github.com/Sethumadhav24/tic-tac-toe",
-    description:
-      "Designed and established an end-to-end CI/CD pipeline for a Java-based application using Jenkins declarative pipelines. Managed pipeline stages: Build, Test, Static code analysis, Docker image creation, and Kubernetes deployment via Argo CD",
-    technologies: ["Jenkins", "Docker", "Kubernetes", "Argo CD", "EC2 Instance"],
-  },
-  {
-    title: "Secure Bank Application",
+    title: "Tiny Language Model | Build Language Model from Scratch",
     image: project1,
-    // link: "https://sece-leaderboard-nitjsr.netlify.app/",
-    link: "https://github.com/Sethumadhav24/Banking_application",
-    description:
-      "A platform developed to provide secure online banking services, built with Spring Boot, Java, MySQL, and Spring Security(authentication and authorization). It offers real-time notifications for sign-ups, transactions, and account activities via email alerts. RESTful APIs enable managing accounts, transactions, and balances. A well-designed database schema for banking-related entities, ensuring data integrity and smooth operations.",
-    technologies: ["Java", "Spring Boot", "Spring Security", "MySQL"],
-  },
-  {
-    title: "Study of chances of Neurological Recovery Post Cardiac Arrest",
-    image: project2,
-    // link: "https://anidatabase.netlify.app/",
-    link: "https://github.com/Sethumadhav24/neurological-recovery-deep-learning",
-    description:
-      "A platform developed to predict neurological recovery post cardiac arrest using a Bi-LSTM model and large dataset analysis. It features a Streamlit-based user interface, enabling seamless interaction with the model. Users can upload data and receive real-time predictions, facilitating a 20% increase in engagement over manual processes. The interface helps medical professionals to make informed decisions and improve patient outcomes.",
-    technologies: ["Python", "Bi-LSTM", "Streamlit", "Scikit-learn"],
-  },
-  // {
-  //   title: "Portfolio Website",
-  //   image: project3,
-  //   link: "https://sece-leaderboard-nitjsr.netlify.app/",
-  //   code: "https://github.com/pratiksonthaliya/SECE-Leaderboard",
-  //   description:
-  //     "A personal portfolio website showcasing projects, skills, and contact information.",
-  //   technologies: ["HTML", "TailwindCSS", "JavaScript", "React"],
-  // },
-  {
-    title: "Biometric Attendance System using Google sheet Integration",
-    image: project3,
-    // link: "https://www.npmjs.com/package/my-programming-language",
     link: "https://github.com/Sethumadhav24/Biometric-Attendance",
-    description:
-      "A platform for automated attendance tracking. Users can effortlessly mark their attendance using biometric authentication, eliminating the need for manual processes.It reduces management time by 40%, enhances security by 75%, and accurately records attendance for 120 individuals with 99.9% data precision, eliminating manual processes.",
-    technologies: ["Python", "Arduino", "Firebase"],
+    description: "Designed and pretrained a compact educational LLM for children's learning applications using AWS SageMaker (p3 GPUs) and synthetic data from Bedrock. Fine-tuned the model via SFT on g4dn.xlarge instances to enhance conversational consistency and educational relevance.",
+    technologies: ["LLM", "AWS SageMaker", "Amazon Bedrock", "SFT", "Python"],
+  },
+  {
+    title: "Child-Adaptive Educational AI Assistant (LLM + RAG)",
+    image: project2,
+    link: "https://github.com/Sethumadhav24/neurological-recovery-deep-learning",
+    description: "Fine-tuned an open-source LLM using GRPO on custom robot-child interaction data. Built a localized educational RAG pipeline using FAISS and LangChain to deliver safe, curriculum-aligned, and age-appropriate responses on edge hardware.",
+    technologies: ["LLM", "GRPO", "RAG", "FAISS", "LangChain"],
+  },
+  {
+    title: "Face Recognition System",
+    image: project3,
+    link: "https://github.com/Sethumadhav24/Biometric-Attendance",
+    description: "Deployed a real-time face detection, recognition, and tracking pipeline on Raspberry Pi. Achieved 20+ FPS tracking using Kalman filtering, custom feature extraction, and PID control loops on humanoid servo heads.",
+    technologies: ["OpenCV", "ONNX", "INT8 Quantization", "Kalman Filter", "PID Controller", "Raspberry Pi"],
+  },
+  {
+    title: "Visual Navigation - Monocular Camera",
+    image: project4,
+    link: "https://github.com/Sethumadhav24/neurological-recovery-deep-learning",
+    description: "Implemented monocular camera-based autonomous indoor navigation (obstacle avoidance and path planning) using visual odometry, Kalman filters, and dead reckoning without LiDAR sensors (8-10 FPS at sub-300ms latency).",
+    technologies: ["Monocular Camera", "OpenCV", "Visual Odometry", "Path Planning", "C++"],
+  },
+  {
+    title: "Object Detection & Recognition",
+    image: project1,
+    link: "https://github.com/Sethumadhav24/Biometric-Attendance",
+    description: "Built a multi-class real-time object detection pipeline using MobileNetV2/YOLO + SSD compiled with Apache TVM, achieving 15+ FPS on Raspberry Pi 4 for obstacle avoidance navigation.",
+    technologies: ["YOLOv8", "SSD", "Apache TVM", "ROS2", "Raspberry Pi"],
+  },
+  {
+    title: "Gesture & Pose Recognition",
+    image: project2,
+    link: "https://github.com/Sethumadhav24/Biometric-Attendance",
+    description: "Developed custom full-body pose estimation and gesture classification models utilizing MediaPipe, PyTorch, and NCNN. Engineered a touchless robot control interface with sub-500ms end-to-end latency.",
+    technologies: ["MediaPipe", "PyTorch", "ONNX Runtime", "NCNN"],
   },
 ];
 
 export const CONTACT = {
-  address: "Hyderabad, Telangana, India ",
-  phoneNo: "+91 6303062156 ",
+  address: "Hyderabad, India",
+  phoneNo: "+91-6303062156",
   email: "sethumadhav2467@gmail.com"
 };
+
+

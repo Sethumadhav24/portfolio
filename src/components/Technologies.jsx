@@ -1,10 +1,16 @@
-// import { DiRedis } from "react-icons/di"
-import { FaJava } from "react-icons/fa";
-import { SiSpringboot, SiJenkins, SiKubernetes, SiAmazonaws } from "react-icons/si";
-import { SiSpring, SiPython, SiMysql } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
-// import { SiLinux } from 'react-icons/si';
+import {
+  SiPython,
+  SiCplusplus,
+  SiPytorch,
+  SiTensorflow,
+  SiOpencv,
+  SiRaspberrypi,
+  SiRos,
+  SiArduino,
+  SiAmazonaws,
+  SiKubernetes
+} from "react-icons/si";
 import { motion } from "framer-motion"
 
 const iconVariants = (duration) => ({
@@ -37,38 +43,7 @@ function Technologies() {
         className="flex flex-wrap items-center justify-center gap-4">
 
         <motion.div
-          variants={iconVariants(8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaJava className="text-6xl text-orange-600" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(4.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiSpringboot className="text-6xl text-green-500" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(4.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiSpring className="text-6xl text-green-600" />
-        </motion.div>
-
-        {/* <div className="rounded-2xl border-4 border-neutral-800 p-4">
-            <DiRedis className="text-6xl text-red-700"/>
-        </div> */}
-
-        <motion.div
-          variants={iconVariants(4.5)}
+          variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -77,24 +52,79 @@ function Technologies() {
         </motion.div>
 
         <motion.div
-          variants={iconVariants(1.5)}
+          variants={iconVariants(3)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMysql className="text-6xl text-orange-600" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaDocker className="text-6xl text-blue-900" />
+          <SiCplusplus className="text-6xl text-blue-600" />
         </motion.div>
 
         <motion.div
           variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiPytorch className="text-6xl text-orange-600" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiTensorflow className="text-6xl text-orange-500" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiOpencv className="text-6xl text-green-500" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiRaspberrypi className="text-6xl text-red-600" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(5.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiRos className="text-6xl text-red-500" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiArduino className="text-6xl text-teal-500" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(6.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaDocker className="text-6xl text-blue-500" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(7)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -103,38 +133,12 @@ function Technologies() {
         </motion.div>
 
         <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiJenkins className="text-6xl text-red-700" />
-        </motion.div>
-
-        {/* <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiLinux className="text-6xl text-black" />
-        </motion.div> */}
-
-        <motion.div
-          variants={iconVariants(3.5)}
+          variants={iconVariants(7.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiKubernetes className="text-6xl text-blue-500" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <RiJavascriptFill className="text-6xl text-yellow-300" />
         </motion.div>
 
       </motion.div>
@@ -143,3 +147,4 @@ function Technologies() {
 }
 
 export default Technologies
+
